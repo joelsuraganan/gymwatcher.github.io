@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <title>Nutrition</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Work+Sans&display=swap" rel="stylesheet">
+    <style>
+body{
+	background-color:#0AA2ED;
+
+}
+
+.left-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	}
+
+.right-image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 200px;
+	height: 200px;
+	}
+
+.header{
+	background-color:rgba(0,0,0,0.3);
+ 	width: 100%;
+	padding:auto;
+ 	margin:auto;
+	text-align:center;
+	}
+
+.paragraph{
+font-style: normal;
+font-family: 'Work Sans', sans-serif; font-size:18px;
+}
+
+.p1{
+font-family: 'Oswald', sans-serif; font-size: 20px;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+      h1{
+        font-family: 'Oswald', sans-serif; font-size: 36px;
+        text-align: center;
+        margin-top: 50px;
+	font-style: normal;
+      }
+
+h2{
+font-style: normal;
+}
+      .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: lightgray;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+.scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.scrollBtn:hover {
+  background-color: #555;
+}
+
+
+
+footer {
+      background-color:rgba(0,0,0,0.3);
+      color: black;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    </style>
+  </head>
+  <body>
+<div class="header">
+    <img src="/Users/nishanthijeyarajah/Downloads/IMG_9773.JPG" alt="me flexing" class="left-image" />
+    <img src="/Users/nishanthijeyarajah/Downloads/IMG_1960.JPG" alt="me flexing pt.2" class="right-image" />
+    <h1>GymWatch</h1>
+    <p class="p1"><i>"Your one stop guide for all your lifting advice"<i></p>
+
+	<h2>Toggle Dark/Light Mode</h2>
+	<p>Click the button to toggle between dark and light mode for this page.</p>
+	<button onclick="myFunction()">Toggle dark mode</button>
+	<script>
+	function myFunction() {
+   	var element = document.body;
+   	element.classList.toggle("dark-mode");
+}
+
+var scrollBtn = document.getElementById("scrollBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+}
+
+
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; 
+}
+
+</script>
+
+</div>
+
+    <h1>Nutrition</h1>
+	<p class="paragraph">Individual nutritional needs may vary based on factors such as age, gender, weight, and activity level. It's recommended to consult a doctor or a registered dietitian for personalized dietary advice, especially if you have any specific health concerns or needs.
+	</p>
+
+<p class="paragraph">
+Proper nutrition is essential for optimal athletic performance and recovery after exercise.
+A balanced diet should include carbohydrates, protein, and healthy fats.
+Carbohydrates provide energy for exercise, while protein is essential for muscle growth and repair.
+Healthy fats, such as those found in nuts and seeds, can provide sustained energy during workouts and aid in recovery.
+Adequate hydration is also important for optimal athletic performance, as dehydration can lead to decreased energy and performance.
+Timing of meals and snacks can also impact athletic performance. Consuming carbohydrates before exercise can provide energy, while consuming protein after exercise can aid in muscle recovery and growth.
+Athletes may benefit from working with a registered dietitian to develop a nutrition plan specific to their needs and goals.
+Supplements should not be used as a replacement for a balanced diet.
+It is important to listen to your body's hunger and fullness cues and consume enough calories to support your activity level.
+</p>
+    <div class="container">
+	<button onclick="scrollToTop()" id="scrollBtn" title="Go to top">Top</button>
+	<button onclick="window.location.href='WebdevelopmentHomePage.html'">Go Back to Homepage</	button>
+    </div>
+<footer>
+    	<p>&copy; GymWatch 2023</p>
+  </footer>
+  </body>
+</html>
