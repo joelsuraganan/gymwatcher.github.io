@@ -1,0 +1,166 @@
+<html>
+  <head>
+    <title>Supplements</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Work+Sans&display=swap" rel="stylesheet">
+    <style>
+body{
+	background-color:#0AA2ED;
+
+}
+
+.left-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	}
+
+.right-image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 200px;
+	height: 200px;
+	}
+
+.header{
+	background-color:rgba(0,0,0,0.3);
+ 	width: 100%;
+	padding:auto;
+ 	margin:auto;
+	text-align:center;
+	}
+
+.paragraph{
+Font-style: normal;
+font-family: 'Work Sans', sans-serif; font-size:18px;
+
+}
+
+.p1{
+font-family: 'Oswald', sans-serif; font-size: 20px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+      h1{
+	font-family: 'Oswald', sans-serif; font-size: 36px;
+	text-align: center;
+        font-weight: bold;
+	font-style:normal;
+        
+      }
+
+h2{
+font-style: normal;
+}
+      .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: lightgray;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+.scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.scrollBtn:hover {
+  background-color: #555;
+}
+
+
+footer {
+      background-color:rgba(0,0,0,0.3);
+      color: black;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    </style>
+  </head>
+  <body>
+<div class="header">
+    <img src="/Users/nishanthijeyarajah/Downloads/IMG_9773.JPG" alt="me flexing" class="left-image" />
+    <img src="/Users/nishanthijeyarajah/Downloads/IMG_1960.JPG" alt="me flexing pt.2" class="right-image" />
+    <h1>GymWatch</h1>
+    <p class="p1"><i>"Your one stop guide for all your lifting advice"<i></p>
+
+	<h2>Toggle Dark/Light Mode</h2>
+	<p>Click the button to toggle between dark and light mode for this page.</p>
+	<button onclick="myFunction()">Toggle dark mode</button>
+	<script>
+	function myFunction() {
+   	var element = document.body;
+   	element.classList.toggle("dark-mode");
+}
+
+var scrollBtn = document.getElementById("scrollBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+}
+
+
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; 
+}
+
+</script>
+</div>
+    <h1>Supplements</h1>
+	<p class="paragraph">Supplements are substances that are taken in addition to an individual's regular diet with the intention of adding nutritional value to their meals. Some common types of supplements include vitamins, minerals, amino acids, and herbal 	extracts. Supplements are often used by athletes, bodybuilders, and other 		individuals who are looking to improve their physical performance or support their 	overall health.
+	</p>
+
+<p class="paragraph">
+Protein powder supplements are used to increase protein intake, which can help support muscle growth and repair.
+Creatine supplements are used to increase energy and power during high-intensity exercises, which can help improve athletic performance.
+Amino acid supplements, such as branched-chain amino acids (BCAAs), are used to support muscle growth and reduce muscle damage during exercise.
+Caffeine supplements are used to increase energy and focus during workouts, which can help improve athletic performance.
+Pre-workout supplements typically contain a combination of ingredients, including caffeine, amino acids, and nitric oxide boosters, which are intended to increase energy, focus, and muscle pump during workouts.
+While supplements can be helpful for athletes, they are not a replacement for a balanced diet and proper training.
+It is important to consult with a healthcare professional before taking any supplements, as they can have potential side effects and interact with medications.
+</p>
+    <div class="container">
+	<button onclick="scrollToTop()" id="scrollBtn" title="Go to top">Top</button>
+	<button onclick="window.location.href='WebdevelopmentHomePage.html'">Go Back to Homepage</button>
+    </div>
+<footer>
+    	<p>&copy; GymWatch 2023</p>
+  </footer>
+  </body>
+</html>
