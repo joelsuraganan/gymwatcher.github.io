@@ -1,0 +1,177 @@
+<html>
+  <head>
+    <title>Workouts</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Work+Sans&display=swap" rel="stylesheet">
+    <style>
+body{
+	background-color:#0AA2ED;
+
+}
+
+.left-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	}
+
+.right-image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 200px;
+	height: 200px;
+	}
+
+.header{
+	background-color:rgba(0,0,0,0.3);
+ 	width: 100%;
+	padding:auto;
+ 	margin:auto;
+	text-align:center;
+	}
+
+.paragraph{
+font-style: normal;
+font-family: 'Work Sans', sans-serif; font-size:18px;
+}
+
+.p1{
+font-family: 'Oswald', sans-serif; font-size: 20px;
+
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+      h1{
+	font-family: 'Oswald', sans-serif; font-size: 36px;
+        text-align: center;
+        margin-top: 50px;
+	font-style: normal;
+      }
+
+h2{
+font-style: normal;
+}
+      .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: lightgray;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+.scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.scrollBtn:hover {
+  background-color: #555;
+}
+
+footer {
+      background-color:rgba(0,0,0,0.3);
+      color: black;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    </style>
+  </head>
+  <body>
+<div class="header">
+    <img src="/Users/nishanthijeyarajah/Downloads/IMG_9773.JPG" alt="me flexing" class="left-image" />
+    <img src="/Users/nishanthijeyarajah/Downloads/IMG_1960.JPG" alt="me flexing pt.2" class="right-image" />
+    <h1>GymWatch</h1>
+    <p class="p1"><i>"Your one stop guide for all your lifting advice"<i></p>
+
+	<h2>Toggle Dark/Light Mode</h2>
+	<p>Click the button to toggle between dark and light mode for this page.</p>
+	<button onclick="myFunction()">Toggle dark mode</button>
+	<script>
+	function myFunction() {
+   	var element = document.body;
+   	element.classList.toggle("dark-mode");
+}
+
+
+var scrollBtn = document.getElementById("scrollBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+}
+
+
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; 
+}
+
+</script>
+
+</div>
+
+    <h1>Workouts</h1>
+
+	<p class="paragraph">Working out refers to physical exercise performed for the purpose of maintaining or improving physical fitness. Regular physical activity can helpimprove overall health, increase muscle strength, reduce the risk of chronic diseases, and promote mental well-being. Some common types of exercise include resistance training, cardiovascular exercise, flexibility and balance exercises, and high-intensity interval training. It's important to engage in regular exercise 	and maintain a balanced diet to achieve optimal health and fitness results. Additionally, it is recommended to consult a doctor before starting any new exercise program, especially if you have any underlying medical conditions.
+
+	</p>
+
+<p class="paragraph">
+Regular exercise is essential for good health and well-being.
+Working out helps to improve cardiovascular health by strengthening the heart and improving blood flow.
+Exercise can also improve lung function by increasing lung capacity and endurance.
+Regular physical activity helps to maintain a healthy weight and build lean muscle mass.
+Exercise releases endorphins, which can help to reduce stress, anxiety, and depression.
+Resistance training, such as weightlifting or bodyweight exercises, can improve bone density and prevent osteoporosis.
+Consistent exercise can improve brain function, memory, and cognitive abilities.
+Stretching and flexibility exercises can help to prevent injury and improve range of motion.
+It's important to stay properly hydrated before, during, and after a workout to prevent dehydration.
+Warm-up exercises, such as jogging in place or stretching, are essential to prepare the body for physical activity and prevent injury.
+Cool-down exercises, such as stretching or gentle walking, are important to help the body gradually return to its resting state and prevent muscle soreness.
+It's important to listen to your body and rest when necessary to prevent overuse injuries and burnout.
+A balanced diet that includes adequate protein, carbohydrates, and healthy fats is important to support physical activity and recovery.
+</p>
+    <div class="container">
+	<button onclick="scrollToTop()" id="scrollBtn" title="Go to top">Top</button>
+	<button onclick="window.location.href='WebdevelopmentHomePage.html'">Go Back to Homepage</button>
+    </div>
+
+
+
+<footer>
+    	<p>&copy; GymWatch 2023</p>
+  </footer>
+  </body>
+</html>
